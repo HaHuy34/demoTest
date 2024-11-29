@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(0, 0, 0, 0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 360px;
+            margin: 100px;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+            z-index: 2;
+        }
+
+        h1 {
+            margin-top:-20px;
+            margin-bottom: 30px;
+            color: #58d532;
+            font-size: 28px;
+        }
+        input#username {
+            font-size: 15px;
+            color: #302929e6;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #918a8a;
+        }
+
+        input {
+            width: 250px;
+            height: 36px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 73%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #58d532;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        .lien-ket i{
+            margin-top: 22px;
+            font-size: 25px;
+        }
+        .lien-ket b{
+            color: #2684ea;
+        }
+        #facbook{
+            color: #2684ea;
+            
+        }
+        #google{
+            color: #f06e2d; 
+        }
+        .lien-ket a{
+            text-decoration: none;    
+        }
+        .lien-ket b{ 
+            padding: 5px;
+            border: 1px solid #2684ea;
+            color: rgb(29, 27, 27);
+            margin-left: 41%;
+            border-radius: 5px;
+        
+        }
+        .lien-ket b:hover{
+            color:#ffffff;
+            background-color: #2684ea;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Sign In</h1>
+        <form action="db2.php" method="post">
+            <label for="username"></label>
+            <input type="text" id="username" name="username" value="Username" required>
+            
+            <label for="password"></label>
+            <input type="password" id="password" name="password" value="Password" required>
+            
+            <button type="submit"><a href="shop.html">Sign In</a></button>
+            
+        </form>
+        <div class="lien-ket">
+            <i id="facbook" class="fa-brands fa-facebook"></i> &nbsp;&nbsp;<i id="google" class="fa-brands fa-google"></i> <b><a href="shop.html">Exit</b></a>
+        </div>
+        <div class="register">
+            <p>I don't have an account? <a href="signup.html" target="_blank">Register</a></p>
+        </div>
+    </div>
+</body>
+</html>
+
